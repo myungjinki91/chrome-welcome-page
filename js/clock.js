@@ -8,15 +8,14 @@ function getTime() {
   return { hours, minutes, seconds };
 }
 
-// Update the clock display
 function updateClock() {
   const { hours, minutes, seconds } = getTime();
-  const timeString = `${hours.toString().padStart(2, "0")}:${minutes
-    .toString()
-    .padStart(2, "0")}:${seconds.toString().padStart(2, "0")}`;
+  const timeString = `
+    ${hours.toString().padStart(2, "0")}:
+    ${minutes.toString().padStart(2, "0")}:
+    ${seconds.toString().padStart(2, "0")}`;
   clock.innerText = timeString;
 }
 
-// Start the clock
 updateClock();
 setInterval(updateClock, 1000);
