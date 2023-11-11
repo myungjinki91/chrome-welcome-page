@@ -7,4 +7,5 @@ function changeBackground() {
 
 document.body.style.backgroundSize = "cover";
 document.body.style.backgroundRepeat = "no-repeat";
+document.body.style.zIndex = "-1";
 changeBackground();
