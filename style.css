@@ -1,11 +1,21 @@
 body {
   height: 100vh;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: space-around;
   align-items: center;
 }
 
 .clock {
   font-size: 128px;
+  color: white;
+}
+
+.hidden {
+  display: none;
+}
+
+.greeting {
+  font-size: 32px;
   color: white;
 }
